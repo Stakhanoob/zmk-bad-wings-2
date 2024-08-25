@@ -154,8 +154,17 @@
             tap-ms = <5>;
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(X) &kp U &kp S>;
+            bindings = <&kp LG(X) &kp D &kp V>;
             label = "WIN_SLEEP";
+        };
+
+        win_stop: win_stop {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <500>;
+            tap-ms = <5>;
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp D &kp A>;
+            label = "WIN_STOP";
         };
     };
 
@@ -182,10 +191,10 @@
 
         Fx_and_Co {
             bindings = <
-&none  &none      &kp LEFT_GUI  &kp CAPS     &kp C_POWER  &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
-&none  &kp DEL    &kp ESC       &kp TAB      &kp C_SLEEP  &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
-&none  &kp LC(X)  &kp LS(INS)   &kp LC(INS)  &kp LC(D)    &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
-                  &trans        &trans       &trans       &trans             &trans  &kp BACKSPACE
+&none  &none      &kp LEFT_GUI  &kp CAPS     &win_stop   &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
+&none  &kp DEL    &kp ESC       &kp TAB      &win_sleep  &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
+&none  &kp LC(X)  &kp LC(INS)   &kp LS(INS)  &kp LC(D)   &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
+                  &trans        &trans       &trans      &trans             &trans  &kp BACKSPACE
             >;
         };
     };
