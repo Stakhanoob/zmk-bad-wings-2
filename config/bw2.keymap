@@ -212,10 +212,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W               &hml LALT E           &kp R                 &kp T       &kp Y    &kp U                &hmr LALT I                        &kp O               &kp P
-&hrm_auriculaire LCMD A  &hrm_autres RALT S  &hrm_autres LCTRL D   &hrm_index LSHIFT F   &kp G       &kp H    &hrm_index RSHIFT J  &hrm_autres RCTRL K                &hrm_autres RALT L  &hrm_auriculaire LCMD SEMI
-&kp Z                    &kp X               &kp C                 &kp V                 &kp B       &kp N    &kp M                &kp COMMA                          &kp DOT             &kp FSLH
-                                             &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp DELETE  &kp TAB  &sk LSHIFT           &tapmod_thumb RIGHT_ALT BACKSPACE
+&kp Q                    &kp W               &hml LALT E           &kp R                 &kp T    &kp Y    &kp U                &hmr LALT I                        &kp O               &kp P
+&hrm_auriculaire LCMD A  &hrm_autres RALT S  &hrm_autres LCTRL D   &hrm_index LSHIFT F   &kp G    &kp H    &hrm_index RSHIFT J  &hrm_autres RCTRL K                &hrm_autres RALT L  &hrm_auriculaire LCMD SEMI
+&kp Z                    &kp X               &kp C                 &kp V                 &kp B    &kp N    &kp M                &kp COMMA                          &kp DOT             &kp FSLH
+                                             &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp ESC  &kp TAB  &sk LSHIFT           &tapmod_thumb RIGHT_ALT BACKSPACE
             >;
         };
 
@@ -230,10 +230,10 @@
 
         Fx_and_Co {
             bindings = <
-&none  &none      &kp LEFT_GUI  &kp CAPS     &win_stop   &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
-&none  &kp DEL    &kp ESC       &kp TAB      &win_sleep  &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
-&none  &kp LC(X)  &kp LC(INS)   &kp LS(INS)  &kp LC(D)   &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
-                  &trans        &trans       &trans      &trans             &trans  &kp BACKSPACE
+&none  &none         &kp LEFT_GUI  &kp CAPS     &win_stop   &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
+&none  &kp LEFT_WIN  &kp DEL       &kp TAB      &win_sleep  &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
+&none  &kp LC(X)     &kp LC(INS)   &kp LS(INS)  &kp LC(D)   &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
+                     &trans        &trans       &trans      &trans             &trans  &kp BACKSPACE
             >;
         };
     };
