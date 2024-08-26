@@ -183,6 +183,19 @@
             require-prior-idle-ms = <160>;
             label = "HRM_AUTRES";
         };
+
+        hrm: hrm {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <160>;
+            label = "HRM";
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -212,10 +225,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W               &hml LALT E           &kp R                 &kp T    &kp Y    &kp U                &hmr LALT I                        &kp O               &kp P
-&hrm_auriculaire LCMD A  &hrm_autres RALT S  &hrm_autres LCTRL D   &hrm_index LSHIFT F   &kp G    &kp H    &hrm_index RSHIFT J  &hrm_autres RCTRL K                &hrm_autres RALT L  &hrm_auriculaire LCMD SEMI
-&kp Z                    &kp X               &kp C                 &kp V                 &kp B    &kp N    &kp M                &kp COMMA                          &kp DOT             &kp FSLH
-                                             &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp ESC  &kp TAB  &sk LSHIFT           &tapmod_thumb RIGHT_ALT BACKSPACE
+&kp Q        &kp W        &hml LALT E           &kp R                 &kp T    &kp Y    &kp U          &hmr LALT I                        &kp O        &kp P
+&hrm LCMD A  &hrm RALT S  &hrm LCTRL D          &hrm LSHIFT F         &kp G    &kp H    &hrm RSHIFT J  &hrm RCTRL K                       &hrm RALT L  &hrm LCMD SEMI
+&kp Z        &kp X        &kp C                 &kp V                 &kp B    &kp N    &kp M          &kp COMMA                          &kp DOT      &kp FSLH
+                          &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp ESC  &kp TAB  &sk LSHIFT     &tapmod_thumb RIGHT_ALT BACKSPACE
             >;
         };
 
