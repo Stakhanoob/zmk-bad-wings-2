@@ -212,10 +212,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W               &hml LALT E           &kp R                 &kp T    &kp Y    &kp U                &hmr LALT I                        &kp O               &kp P
-&hrm_auriculaire LCMD A  &hrm_autres RALT S  &hrm_autres LCTRL D   &hrm_index LSHIFT F   &kp G    &kp H    &hrm_index RSHIFT J  &hrm_autres RCTRL K                &hrm_autres RALT L  &hrm_auriculaire LCMD SEMI
-&kp Z                    &kp X               &kp C                 &kp V                 &kp B    &kp N    &kp M                &kp COMMA                          &kp DOT             &kp FSLH
-                                             &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp ESC  &kp TAB  &sk LSHIFT           &tapmod_thumb RIGHT_ALT BACKSPACE
+&kp Q                    &kp W               &hml LALT E           &kp R                           &kp T                  &kp Y    &kp U                &hmr LALT I                        &kp O               &kp P
+&hrm_auriculaire LCMD A  &hrm_autres RALT S  &hrm_autres LCTRL D   &hrm_index LSHIFT F             &kp G                  &kp H    &hrm_index RSHIFT J  &hrm_autres RCTRL K                &hrm_autres RALT L  &hrm_auriculaire LCMD SEMI
+&kp Z                    &kp X               &kp C                 &kp V                           &kp B                  &kp N    &kp M                &kp COMMA                          &kp DOT             &kp FSLH
+                                             &layer_thumb 1 SPACE  &tapmod_thumb LEFT_SHIFT ENTER  &layer_thumb 2 DELETE  &kp TAB  &sk LSHIFT           &tapmod_thumb RIGHT_ALT BACKSPACE
             >;
         };
 
