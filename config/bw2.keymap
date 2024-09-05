@@ -123,7 +123,7 @@
             flavor = "tap-preferred";
         };
 
-        hrm: hrm {
+        hrm_auriculaire: hrm_auriculaire {
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
             hold-trigger-on-release;
@@ -133,7 +133,46 @@
             bindings = <&kp>, <&kp>;
 
             require-prior-idle-ms = <160>;
-            label = "HRM";
+            label = "HRM_AURICULAIRE";
+        };
+
+        hrm_annulaire: hrm_annulaire {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <250>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <160>;
+            label = "HRM_ANNULAIRE";
+        };
+
+        hrm_majeur: hrm_majeur {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            tapping-term-ms = <225>;
+            quick-tap-ms = <250>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <160>;
+            label = "HRM_MAJEUR";
+        };
+
+        hrm_index: hrm_index {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            hold-trigger-on-release;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <250>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <160>;
+            label = "HRM_INDEX";
         };
     };
 
@@ -164,10 +203,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &hrm LALT E           &kp R                 &kp T    &kp Y                       &kp U                     &hrm LALT I                            &kp O        &kp P
-&hrm LCMD A  &hrm RALT S  &hrm LCTRL D          &hrm LSHIFT F         &kp G    &kp H                       &hrm RSHIFT J             &hrm RCTRL K                           &hrm RALT L  &hrm LCMD SEMI
-&kp Z        &kp X        &kp C                 &kp V                 &kp B    &kp N                       &kp M                     &kp COMMA                              &kp DOT      &kp FSLH
-                          &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp TAB  &tapmod_thumb LCTRL ESCAPE  &tapmod_thumb LSHIFT TAB  &tapmod_thumb RIGHT_ALT LC(BACKSPACE)
+&kp Q                    &kp W                  &hrm_majeur LALT E    &kp R                 &kp T    &kp Y                       &kp U                     &hrm_majeur LALT I                 &kp O                  &kp P
+&hrm_auriculaire LCMD A  &hrm_annulaire RALT S  &hrm_majeur LCTRL D   &hrm_index LSHIFT F   &kp G    &kp H                       &hrm_index RSHIFT J       &hrm_majeur RCTRL K                &hrm_annulaire RALT L  &hrm_auriculaire LCMD SEMI
+&kp Z                    &kp X                  &kp C                 &kp V                 &kp B    &kp N                       &kp M                     &kp COMMA                          &kp DOT                &kp FSLH
+                                                &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp TAB  &tapmod_thumb LCTRL ESCAPE  &tapmod_thumb LSHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE
             >;
         };
 
@@ -182,10 +221,10 @@
 
         Fx_and_Co {
             bindings = <
-&none  &none       &kp LEFT_GUI  &kp CAPS     &win_stop   &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
-&none  &kp DELETE  &kp ESC       &kp TAB      &win_sleep  &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
-&none  &kp LC(X)   &kp LC(INS)   &kp LS(INS)  &kp LC(D)   &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
-                   &trans        &trans       &trans      &trans             &trans  &kp BACKSPACE
+&none  &none       &kp LEFT_GUI  &kp CAPS     &kp C_POWER  &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
+&none  &kp DELETE  &kp ESC       &kp TAB      &kp C_SLEEP  &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
+&none  &kp LC(X)   &kp LC(INS)   &kp LS(INS)  &kp LC(D)    &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
+                   &trans        &trans       &trans       &trans             &trans  &kp BACKSPACE
             >;
         };
     };
