@@ -84,7 +84,7 @@
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
             hold-trigger-on-release;
-            tapping-term-ms = <275>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -97,7 +97,7 @@
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
             hold-trigger-on-release;
-            tapping-term-ms = <225>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
             hold-trigger-on-release;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
@@ -127,10 +127,10 @@
 
         default_layer {
             bindings = <
-&kp Q                    &kp W                  &hrm_majeur LALT E    &kp R                 &kp T    &kp Y                       &kp U                     &hrm_majeur LALT I                 &kp O                  &kp P
-&hrm_auriculaire LCMD A  &hrm_annulaire RALT S  &hrm_majeur LCTRL D   &hrm_index LSHIFT F   &kp G    &kp H                       &hrm_index RSHIFT J       &hrm_majeur RCTRL K                &hrm_annulaire RALT L  &hrm_auriculaire LCMD SEMI
-&kp Z                    &kp X                  &kp C                 &kp V                 &kp B    &kp N                       &kp M                     &kp COMMA                          &kp DOT                &kp FSLH
-                                                &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &kp TAB  &tapmod_thumb LCTRL ESCAPE  &tapmod_thumb LSHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE
+&kp Q                    &kp W                  &hrm_majeur LALT E    &kp R                 &kp T                    &kp Y                       &kp U                     &hrm_majeur LALT I                 &kp O                  &kp P
+&hrm_auriculaire LCMD A  &hrm_annulaire RALT S  &hrm_majeur LCTRL D   &hrm_index LSHIFT F   &kp G                    &kp H                       &hrm_index RSHIFT J       &hrm_majeur RCTRL K                &hrm_annulaire RALT L  &hrm_auriculaire LCMD SEMI
+&kp Z                    &kp X                  &kp C                 &kp V                 &kp B                    &kp N                       &kp M                     &kp COMMA                          &kp DOT                &kp FSLH
+                                                &layer_thumb 1 SPACE  &layer_thumb 2 ENTER  &tapmod_thumb LCTRL TAB  &tapmod_thumb LCTRL ESCAPE  &tapmod_thumb LSHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE
             >;
         };
 
