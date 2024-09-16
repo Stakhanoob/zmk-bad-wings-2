@@ -140,19 +140,19 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E                 &kp R                      &kp T               &kp Y         &kp U                         &kp I                              &kp O    &kp P
-&kp A  &kp S  &kp D                 &kp F                      &kp G               &kp H         &kp J                         &kp K                              &kp L    &kp SEMI
-&kp Z  &kp X  &kp C                 &kp V                      &kp B               &kp N         &kp M                         &kp COMMA                          &kp DOT  &kp FSLH
-              &layer_thumb 1 SPACE  &tapmod_thumb LCTRL ENTER  &layer_thumb 2 TAB  &kp LEFT_WIN  &tapmod_thumb LEFT_SHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE
+&kp Q  &kp W  &kp E                      &kp R                 &kp T               &kp Y         &kp U                         &kp I                              &kp O    &kp P
+&kp A  &kp S  &kp D                      &kp F                 &kp G               &kp H         &kp J                         &kp K                              &kp L    &kp SEMI
+&kp Z  &kp X  &kp C                      &kp V                 &kp B               &kp N         &kp M                         &kp COMMA                          &kp DOT  &kp FSLH
+              &tapmod_thumb LCTRL SPACE  &layer_thumb 1 ENTER  &layer_thumb 2 TAB  &kp LEFT_WIN  &tapmod_thumb LEFT_SHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE
             >;
         };
 
         arrow_and_num {
             bindings = <
-&kp HOME         &kp PG_UP         &kp UP       &kp PAGE_DOWN      &kp END        &kp KP_PLUS     &kp N4         &kp N5  &kp N6  &kp INSERT
-&kp LC(LA(DEL))  &kp LEFT          &kp DOWN     &kp RIGHT          &kp PSCRN      &kp KP_SLASH    &kp N1         &kp N2  &kp N3  &kp KP_MINUS
-&kp LC(LG(F4))   &kp LC(LG(LEFT))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &kp LC(LG(D))  &kp KP_DOT      &kp N7         &kp N8  &kp N9  &kp KP_MULTIPLY
-                                   &trans       &trans             &trans         &kp LEFT_SHIFT  &kp BACKSPACE  &kp N0
+&kp HOME         &kp PG_UP         &kp UP       &kp PAGE_DOWN      &kp END        &kp KP_PLUS     &kp N4  &kp N5         &kp N6  &kp INSERT
+&kp LC(LA(DEL))  &kp LEFT          &kp DOWN     &kp RIGHT          &kp PSCRN      &kp KP_SLASH    &kp N1  &kp N2         &kp N3  &kp KP_MINUS
+&kp LC(LG(F4))   &kp LC(LG(LEFT))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &kp LC(LG(D))  &kp KP_DOT      &kp N7  &kp N8         &kp N9  &kp KP_MULTIPLY
+                                   &trans       &trans             &trans         &kp LEFT_SHIFT  &kp N0  &kp BACKSPACE
             >;
         };
 
