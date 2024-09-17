@@ -131,15 +131,6 @@
             require-prior-idle-ms = <160>;
             label = "HRM";
         };
-
-        td_droit: td_droit {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_DROIT";
-            #binding-cells = <0>;
-            bindings =
-                <&tapmod_thumb LCTRL LEFT_WIN>,
-                <&tapmod_thumb LEFT_WIN TAB>;
-        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -149,17 +140,17 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E               &kp R                 &kp T                      &kp Y                        &kp U                               &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D               &kp F                 &kp G                      &kp H                        &kp J                               &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C               &kp V                 &kp B                      &kp N                        &kp M                               &kp COMMA  &kp DOT  &kp FSLH
-              &layer_thumb 2 TAB  &layer_thumb 1 SPACE  &tapmod_thumb LCTRL ENTER  &tapmod_thumb RIGHT_ALT TAB  &tapmod_thumb LEFT_SHIFT BACKSPACE  &td_droit
+&kp Q                    &kp W                       &hrm_majeur LEFT_ALT E  &kp R                    &kp T                      &kp Y                        &kp U                               &hrm_majeur LEFT_ALT I  &kp O                       &kp P
+&hrm_auriculaire LGUI A  &hrm_annulaire RIGHT_ALT S  &hrm_majeur LCTRL D     &hrm_index LEFT_SHIFT F  &kp G                      &kp H                        &hrm_index LEFT_SHIFT J             &hrm_majeur LCTRL K     &hrm_annulaire RIGHT_ALT L  &hrm_auriculaire LGUI SEMI
+&kp Z                    &kp X                       &kp C                   &kp V                    &kp B                      &kp N                        &kp M                               &kp COMMA               &kp DOT                     &kp FSLH
+                                                     &layer_thumb 2 TAB      &layer_thumb 1 SPACE     &tapmod_thumb LCTRL ENTER  &tapmod_thumb RIGHT_ALT TAB  &tapmod_thumb LEFT_SHIFT BACKSPACE  &kp LEFT_WIN
             >;
         };
 
         arrow_and_num {
             bindings = <
 &kp HOME         &kp PG_UP         &kp UP       &kp PAGE_DOWN      &kp END        &kp KP_PLUS     &kp N4  &kp N5         &kp N6  &kp INSERT
-&kp LC(LA(DEL))  &kp LEFT          &kp DOWN     &kp RIGHT          &kp PSCRN      &kp KP_SLASH    &kp N1  &kp N2         &kp N3  &kp KP_MINUS
+&kp LC(LA(DEL))  &kp LEFT          &kp DOWN     &kp RIGHT          &kp LG(V)      &kp KP_SLASH    &kp N1  &kp N2         &kp N3  &kp KP_MINUS
 &kp LC(LG(F4))   &kp LC(LG(LEFT))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &kp LC(LG(D))  &kp KP_DOT      &kp N7  &kp N8         &kp N9  &kp KP_MULTIPLY
                                    &trans       &trans             &trans         &kp LEFT_SHIFT  &kp N0  &kp BACKSPACE
             >;
@@ -167,10 +158,10 @@
 
         Fx_and_Co {
             bindings = <
-&kp CAPSLOCK  &kp DELETE  &kp LEFT_GUI    &kp TAB      &kp C_POWER  &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
-&kp LEFT_ALT  &kp LCTRL   &kp LEFT_SHIFT  &kp LG(V)    &kp ESC      &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
-&none         &kp LC(X)   &kp LC(INS)     &kp LS(INS)  &kp LC(D)    &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
-                          &trans          &trans       &trans       &trans             &trans  &kp BACKSPACE
+&none     &none            &none         &none        &kp C_POWER  &kp C_VOL_UP       &kp F1  &kp F2         &kp F3   &kp F4
+&kp CAPS  &kp PRINTSCREEN  &kp LEFT_WIN  &kp DELETE   &kp ESC      &kp C_VOLUME_DOWN  &kp F5  &kp F6         &kp F7   &kp F8
+&none     &kp LC(X)        &kp LC(INS)   &kp LS(INS)  &kp LC(D)    &kp C_MUTE         &kp F9  &kp F10        &kp F11  &kp F12
+                           &trans        &trans       &trans       &trans             &trans  &kp BACKSPACE
             >;
         };
     };
