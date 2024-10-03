@@ -156,7 +156,7 @@
 &kp Q                    &kp W                       &hrm_majeur LEFT_ALT E  &kp R                    &kp T                      &kp Y                         &kp U                              &hrm_majeur LEFT_ALT I  &kp O                       &kp P
 &hrm_auriculaire LGUI A  &hrm_annulaire RIGHT_ALT S  &hrm_majeur LCTRL D     &hrm_index LEFT_SHIFT F  &kp G                      &kp H                         &hrm_index LEFT_SHIFT J            &hrm_majeur LCTRL K     &hrm_annulaire RIGHT_ALT L  &hrm_auriculaire LGUI SEMI
 &kp Z                    &kp X                       &kp C                   &kp V                    &kp B                      &kp N                         &kp M                              &kp COMMA               &kp DOT                     &kp FSLH
-                                                     &layer_thumb 2 TAB      &layer_thumb 1 SPACE     &tapmod_thumb LCTRL ENTER  &tapmod_thumb LEFT_SHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE  &kp LEFT_WIN
+                                                     &layer_thumb 2 TAB      &layer_thumb 1 SPACE     &tapmod_thumb LCTRL ENTER  &tapmod_thumb LEFT_SHIFT TAB  &tapmod_thumb RIGHT_ALT BACKSPACE  &kp ESCAPE
             >;
         };
 
